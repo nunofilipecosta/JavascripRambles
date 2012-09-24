@@ -16,8 +16,8 @@
                 }
             }
             price = val;
-            for (var i = 0; i < priceChanged.length; i++) {
-                priceChanged[i](this);
+            for (var j = 0; j < priceChanged.length; j++) {
+                priceChanged[j](this);
             }
         }
         return price;
@@ -54,4 +54,4 @@ currentBook.onPriceChanged(function (b) {
 
 
 currentBook.price(19.99);
-currentBook.price(99.99);
+currentBook.price(199.00);
